@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Operativos</title>
+    <link rel="stylesheet" href="estilos/sistemas.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/71d073c933.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo">Logo</a>
+            
+            <input type="checkbox" id="menu">
+            <label for="menu" class="icono-menu"><i class="fa-solid fa-bars"></i></label>
+
+            <div class="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="sistemas.html">Sistemas Operativos</a>
+                <a href="mapa_sitio.html">Mapa del Sitio</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="container-acciones">
+                <div class="search-container">
+                    <button type="button" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" name="buscar" id="buscar" placeholder="Busca tu sistema operativo...">
+                </div>
+
+                <select id="idiomas">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                    <option value="de">Alemán</option>
+                    <option value="pt">Portugués</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="explorar-sistemas">
+            <h2>Explora los Sistemas Operativos</h2>
+            <p>En esta sección podrás encontrar una lista completa de los principales sistemas operativos, desde los más populares hasta los menos conocidos.  Haz clic en el boton para obtener información más detallada.</p>
+            <a href="#explorar">Explorar Sistemas</a>
+        </div>
+        
+        <div id="destacados">
+            <a name="explorar"></a>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-windows icon"></i>
+                    <a name="windows"></a>
+                    <article class="sistemas">
+                        <h3>Windows</h3>
+                        <p>Windows, desarrollado por Microsoft, es el sistema operativo más utilizado en computadoras personales.</p>
+                    </article>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linux icon"></i>
+                    <a name="linux"></a>
+                    <article class="sistemas">
+                        <h3>Linux</h3>
+                        <p>Linux es un sistema operativo de código abierto conocido por su flexibilidad y seguridad.</p>
+                    </article>
+                </li>
+                <li>
+                    <i class="fa-brands fa-apple icon"></i>
+                    <a name="macos"></a>
+                    <article class="sistemas">
+                        <h3>macOS</h3>
+                        <p>macOS, desarrollado por Apple, es el sistema operativo que impulsa las computadoras Mac.</p>
+                    </article>
+                </li>
+                <li>
+                    <i class="fa-brands fa-android icon"></i>
+                    <a name="android"></a>
+                    <article class="sistemas">
+                        <h3>Android</h3>
+                        <p>Android, desarrollado por Google, es el sistema operativo líder en dispositivos móviles.</p>
+                    </article>
+                </li>
+                <li>
+                    <i class="fa-brands fa-apple icon"></i>
+                    <a name="apple"></a>
+                    <article class="sistemas">
+                        <h3>iOS</h3>
+                        <p>iOS es el sistema operativo móvil de Apple, utilizado en dispositivos como iPhone y iPad.</p>
+                    </article>
+                </li>
+                <li>
+                    <i class="fa-solid fa-server icon"></i>
+                    <a name="unix"></a>
+                    <article class="sistemas">
+                        <h3>Unix</h3>
+                        <p>Unix es un sistema operativo multitarea y multiusuario utilizado principalmente en servidores.</p>
+                    </article>
+                </li>
+                <li>
+                    <i class="fa-brands fa-chrome icon"></i>
+                    <a name="chromeos"></a>
+                    <article class="sistemas">
+                        <h3>Chrome OS</h3>
+                        <p>Chrome OS, desarrollado por Google, está diseñado para dispositivos Chromebook.</p>
+                    </article>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="tabla-sistemas">
+            <h3>Comparativa de Sistemas Operativos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sistema Operativo</th>
+                        <th>Desarrollador</th>
+                        <th>Plataforma Principal</th>
+                        <th>Tipo de Licencia</th>
+                        <th>Popularidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Sistema Operativo">Windows</td>
+                        <td data-label="Desarrollador">Microsoft</td>
+                        <td data-label="Plataforma Principal">PC</td>
+                        <td data-label="Tipo de Licencia">Propietaria</td>
+                        <td data-label="Popularidad">Alta</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sistema Operativo">Linux</td>
+                        <td data-label="Desarrollador">Comunidad</td>
+                        <td data-label="Plataforma Principal">PC, Servidores</td>
+                        <td data-label="Tipo de Licencia">Código Abierto</td>
+                        <td data-label="Popularidad">Alta (en servidores)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sistema Operativo">macOS</td>
+                        <td data-label="Desarrollador">Apple</td>
+                        <td data-label="Plataforma Principal">Mac</td>
+                        <td data-label="Tipo de Licencia">Propietaria</td>
+                        <td data-label="Popularidad">Alta (usuarios de Mac)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sistema Operativo">Android</td>
+                        <td data-label="Desarrollador">Google</td>
+                        <td data-label="Plataforma Principal">Smartphones</td>
+                        <td data-label="Tipo de Licencia">Código Abierto (parcial)</td>
+                        <td data-label="Popularidad">Muy Alta</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sistema Operativo">iOS</td>
+                        <td data-label="Desarrollador">Apple</td>
+                        <td data-label="Plataforma Principal">iPhone, iPad</td>
+                        <td data-label="Tipo de Licencia">Propietaria</td>
+                        <td data-label="Popularidad">Muy Alta</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sistema Operativo">Unix</td>
+                        <td data-label="Desarrollador">Varios</td>
+                        <td data-label="Plataforma Principal">Servidores</td>
+                        <td data-label="Tipo de Licencia">Mixta</td>
+                        <td data-label="Popularidad">Moderada</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sistema Operativo">Chrome OS</td>
+                        <td data-label="Desarrollador">Google</td>
+                        <td data-label="Plataforma Principal">Chromebooks</td>
+                        <td data-label="Tipo de Licencia">Propietaria</td>
+                        <td data-label="Popularidad">Alta (en educación)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+        </ul>
+        <hr>
+        <p>© 2024 Guía de Sistemas Operativos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

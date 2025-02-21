@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistemas Operativos</title>
-    <link rel="stylesheet" href="estilos/sistemas.css">
-    <script src="script.js" defer></script>
+    <link rel="icon" href="./img/logo/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/71d073c933.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos/sistemas.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" id="logo">Logo</a>
+            <a href="index.html" id="logo"><img src="./img/logo/logo_sistemas_operativos2.png" alt="Logo Sistemas Operativos"></a>
             
             <input type="checkbox" id="menu">
             <label for="menu" class="icono-menu"><i class="fa-solid fa-bars"></i></label>
@@ -40,7 +43,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-sistemas">
         <div id="explorar-sistemas">
             <h2>Explora los Sistemas Operativos</h2>
             <p>En esta sección podrás encontrar una lista completa de los principales sistemas operativos, desde los más populares hasta los menos conocidos.  Haz clic en el boton para obtener información más detallada.</p>
@@ -49,64 +52,69 @@
         
         <div id="destacados">
             <a name="explorar"></a>
-            <ul>
-                <li>
-                    <i class="fa-brands fa-windows icon"></i>
-                    <a name="windows"></a>
-                    <article class="sistemas">
-                        <h3>Windows</h3>
-                        <p>Windows, desarrollado por Microsoft, es el sistema operativo más utilizado en computadoras personales.</p>
-                    </article>
-                </li>
-                <li>
-                    <i class="fa-brands fa-linux icon"></i>
-                    <a name="linux"></a>
-                    <article class="sistemas">
-                        <h3>Linux</h3>
-                        <p>Linux es un sistema operativo de código abierto conocido por su flexibilidad y seguridad.</p>
-                    </article>
-                </li>
-                <li>
-                    <i class="fa-brands fa-apple icon"></i>
-                    <a name="macos"></a>
-                    <article class="sistemas">
-                        <h3>macOS</h3>
-                        <p>macOS, desarrollado por Apple, es el sistema operativo que impulsa las computadoras Mac.</p>
-                    </article>
-                </li>
-                <li>
-                    <i class="fa-brands fa-android icon"></i>
-                    <a name="android"></a>
-                    <article class="sistemas">
-                        <h3>Android</h3>
-                        <p>Android, desarrollado por Google, es el sistema operativo líder en dispositivos móviles.</p>
-                    </article>
-                </li>
-                <li>
-                    <i class="fa-brands fa-apple icon"></i>
-                    <a name="apple"></a>
-                    <article class="sistemas">
-                        <h3>iOS</h3>
-                        <p>iOS es el sistema operativo móvil de Apple, utilizado en dispositivos como iPhone y iPad.</p>
-                    </article>
-                </li>
-                <li>
-                    <i class="fa-solid fa-server icon"></i>
-                    <a name="unix"></a>
-                    <article class="sistemas">
-                        <h3>Unix</h3>
-                        <p>Unix es un sistema operativo multitarea y multiusuario utilizado principalmente en servidores.</p>
-                    </article>
-                </li>
-                <li>
-                    <i class="fa-brands fa-chrome icon"></i>
-                    <a name="chromeos"></a>
-                    <article class="sistemas">
-                        <h3>Chrome OS</h3>
-                        <p>Chrome OS, desarrollado por Google, está diseñado para dispositivos Chromebook.</p>
-                    </article>
-                </li>
-            </ul>
+                <div id="conten-tarjetas">
+                    <div class="tarjetas">
+                        <img src="https://tm.ibxk.com.br/2021/06/16/16091543097047.jpg?ims=750x" alt="Image cap">
+                        <a name="windows"></a>
+                        <div class="apartado-texto">
+                            <h5>Windows</h5>
+                            <p>Windows, desarrollado por Microsoft, es el sistema operativo más utilizado en computadoras personales.</p>
+                            <a href="#" class="enlace" data-bs-toggle="modal" data-bs-target="#modalWindows">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="tarjetas">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/79fcd182-0052-4a73-8669-f1b352507241/d95aet1-e428d920-70ff-45fb-82f2-bca56536ed77.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc5ZmNkMTgyLTAwNTItNGE3My04NjY5LWYxYjM1MjUwNzI0MVwvZDk1YWV0MS1lNDI4ZDkyMC03MGZmLTQ1ZmItODJmMi1iY2E1NjUzNmVkNzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5ke_UD50Yruaa9pdEJT6BUBR2GGzdkELx8yn65GCD88" alt="Image cap">
+                        <a name="linux"></a>
+                        <div class="apartado-texto">
+                            <h5>Linux</h5>
+                            <p>Linux es un sistema operativo de código abierto conocido por su flexibilidad y seguridad.</p>
+                            <a href="#" class="enlace" data-bs-toggle="modal" data-bs-target="#modalLinux">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="tarjetas">
+                        <img src="https://www.muycomputer.com/wp-content/uploads/2019/10/macOS-Catalina.jpg" alt="Image cap">
+                        <a name="macos"></a>
+                        <div class="apartado-texto">
+                            <h5>macOS</h5>
+                            <p>macOS, desarrollado por Apple, es el sistema operativo que impulsa las computadoras Mac.</p>
+                            <a href="#" class="enlace" data-bs-toggle="modal" data-bs-target="#modalMacOS">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="tarjetas">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/416/113/278/android-operating-system-blurred-technology-operating-system-wallpaper-preview.jpg" alt="Image cap">
+                        <a name="android"></a>
+                        <div class="apartado-texto">
+                            <h5>Android</h5>
+                            <p>Android, desarrollado por Google, es el sistema operativo líder en dispositivos móviles.</p>
+                            <a href="#" class="enlace" data-bs-toggle="modal" data-bs-target="#modalAndroid">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="tarjetas">
+                        <img src="https://basicappleguy.com/s/Black6KAppleID.png" alt="Image cap">
+                        <a name="ios"></a>
+                        <div class="apartado-texto">
+                            <h5>iOS</h5>
+                            <p>iOS es el sistema operativo móvil de Apple, utilizado en dispositivos como iPhone y iPad.</p>
+                            <a href="#" class="enlace" data-bs-toggle="modal" data-bs-target="#modaliOS">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="tarjetas">
+                        <img src="https://www.ceotech.it/wp-content/uploads/2023/09/Chrome-OS-117-nuove-funzionalita-e-Material-You-1.jpg" alt="Image cap">
+                        <a name="chromeos"></a>
+                        <div class="apartado-texto">
+                            <h5>Chrome OS</h5>
+                            <p>Chrome OS, desarrollado por Google, está diseñado para dispositivos Chromebook.</p>
+                            <a href="#" class="enlace" data-bs-toggle="modal" data-bs-target="#modalChromeOS">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -159,13 +167,6 @@
                         <td data-label="Popularidad">Muy Alta</td>
                     </tr>
                     <tr>
-                        <td data-label="Sistema Operativo">Unix</td>
-                        <td data-label="Desarrollador">Varios</td>
-                        <td data-label="Plataforma Principal">Servidores</td>
-                        <td data-label="Tipo de Licencia">Mixta</td>
-                        <td data-label="Popularidad">Moderada</td>
-                    </tr>
-                    <tr>
                         <td data-label="Sistema Operativo">Chrome OS</td>
                         <td data-label="Desarrollador">Google</td>
                         <td data-label="Plataforma Principal">Chromebooks</td>
@@ -177,7 +178,409 @@
         </div>
     </main>
 
-    <footer>
+    <!-- Modal Windows -->
+    <div class="modal fade" id="modalWindows" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Windows</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <main class="container mt-4">
+                        <section class="mb-5">
+                            <h2 class="text-primary">Descripción</h2>
+                            <p>Windows es un sistema operativo desarrollado por <strong>Microsoft</strong>, lanzado por primera vez en
+                                <strong>1985</strong>. Es el sistema operativo más utilizado en el mundo, especialmente en computadoras
+                                personales y empresas.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Características</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Interfaz gráfica de usuario (GUI) con ventanas, iconos y menús.</li>
+                                <li class="list-group-item">Compatibilidad con una amplia variedad de software y hardware.</li>
+                                <li class="list-group-item">Incluye el asistente de voz <strong>Cortana</strong> y la tienda de aplicaciones <strong>Microsoft Store</strong>.</li>
+                                <li class="list-group-item">Seguridad integrada con <strong>Windows Defender</strong> y actualizaciones constantes.</li>
+                                <li class="list-group-item">Diferentes ediciones como <strong>Windows Home, Pro, Enterprise y Server</strong> para distintos tipos de usuarios.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Desarrollo</h2>
+                            <p>Windows comenzó como una extensión de <strong>MS-DOS</strong> y evolucionó a un sistema completamente
+                                gráfico con <strong>Windows 95</strong>. Desde entonces, ha pasado por muchas versiones, destacando
+                                <strong>Windows XP</strong>, <strong>Windows 7</strong>, <strong>Windows 10</strong> y la versión más
+                                reciente, <strong>Windows 11</strong>, que introduce mejoras en diseño, integración con la nube y
+                                soporte para apps de Android.</p>
+                                
+                            <div class="container-sm">
+                                <div class="container-imagenes">
+                                    <figure class="figure" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Windows XP">
+                                        <img src="https://i.blogs.es/96c029/windows-xp-sin-soporte/1366_2000.jpg" class="figure-img img-fluid rounded" alt="Imagen Windows XP">
+                                        <figcaption class="figure-caption">Windows XP</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/06/windows-7-ya-no-actualizara-ordenadores-cpus-antiguas.jpg?tf=3840x" class="figure-img img-fluid rounded" alt="Imagen Windows 7">
+                                        <figcaption class="figure-caption">Windows 7</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2015/07/112999-windows-10-recibira-soporte-parches-seguridad-durante-10-anos.jpg?tf=3840x" class="figure-img img-fluid rounded" alt="Imagen Windows 10">
+                                        <figcaption class="figure-caption">Windows 10</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://i.blogs.es/1e6d84/win11-hero/1366_2000.jpeg" class="figure-img img-fluid rounded" alt="Imagen Windows 11">
+                                        <figcaption class="figure-caption">Windows 11</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                    </main>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Linux -->
+    <div class="modal fade" id="modalLinux" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Linux</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <main class="container mt-4">
+                        <section class="mb-5">
+                            <h2 class="text-primary">Descripción</h2>
+                            <p>Linux es un sistema operativo de código abierto basado en <strong>Unix</strong>, creado en <strong>1991</strong> por <strong>Linus Torvalds.</strong>                                 Es popular en servidores, supercomputadoras y sistemas embebidos, aunque también se usa en escritorios.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Características</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Núcleo <strong>Linux</strong> con soporte para múltiples arquitecturas y dispositivos.</li>
+                                <li class="list-group-item">Distribuciones como <strong>Ubuntu, Fedora, Debian y CentOS</strong> con diferentes enfoques y herramientas.</li>
+                                <li class="list-group-item">Interfaz de línea de comandos (CLI) y entorno gráfico con <strong>GNOME, KDE y XFCE</strong>.</li>
+                                <li class="list-group-item">Software libre y de código abierto con repositorios de aplicaciones como <strong>APT y YUM</strong>.</li>
+                                <li class="list-group-item">Seguridad integrada con <strong>SELinux</strong> y actualizaciones regulares.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Instalacion de Ubuntu 20.04</h2>
+                            <p>Para instalar Ubuntu 20.04, necesitas una imagen ISO y un dispositivo de arranque como un USB. 
+                                Puedes descargar la imagen desde el sitio web oficial de Ubuntu y usar una herramienta como 
+                                Rufus para crear el USB de instalación. En mi caso lo instalaré en una maquina de VirtualBox a modo de prueba.</p>
+                                <div class="video">
+                                    <iframe width="560" height="315" src="./install_ubuntu.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Desarrollo</h2>
+                            <p>El <strong>núcleo de Linux</strong> es la base de múltiples distribuciones que se han desarrollado a lo largo del tiempo. 
+                                Empresas como <strong>Red Hat, Canonical (Ubuntu)</strong> y <strong>SUSE</strong> han contribuido a su expansión en el mundo empresarial. 
+                                Su comunidad de código abierto sigue mejorándolo continuamente.</p>
+                                
+                            <div class="container-sm">
+                                <div class="container-imagenes">
+                                    <figure class="figure">
+                                        <img src="https://i.redd.it/xim0ji45rzn81.jpg" class="figure-img img-fluid rounded" alt="Imagen Ubuntu">
+                                        <figcaption class="figure-caption">Ubuntu</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6f7d1d9-1fe9-445e-bf0c-49ba4f9aaef3/dehe3kx-619d683a-b791-4c91-9451-e5d0ef51d59f.png/v1/fill/w_1192,h_670,q_70,strp/fedora_wallpaper_002_by_mobilex1122_dehe3kx-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2Q2ZjdkMWQ5LTFmZTktNDQ1ZS1iZjBjLTQ5YmE0ZjlhYWVmM1wvZGVoZTNreC02MTlkNjgzYS1iNzkxLTRjOTEtOTQ1MS1lNWQwZWY1MWQ1OWYucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xVi-IFt58Ap-cvCmsLw8JxwwpK4jaSSwIxchzim2VRs" class="figure-img img-fluid rounded" alt="Imagen Fedora">
+                                        <figcaption class="figure-caption">Fedora</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://www.debugpoint.com/wp-content/uploads/2021/04/Debian-11-wallpaper_1920x1080.png" class="figure-img img-fluid rounded" alt="Imagen Debian">
+                                        <figcaption class="figure-caption">Debian</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://c4.wallpaperflare.com/wallpaper/490/593/209/centos-linux-wallpaper-preview.jpg" class="figure-img img-fluid rounded" alt="Imagen CentOS">
+                                        <figcaption class="figure-caption">CentOS</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                    </main>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal macOS -->
+    <div class="modal fade" id="modalMacOS" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">macOS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <main class="container mt-4">
+                        <section class="mb-5">
+                            <h2 class="text-primary">Descripción</h2>
+                            <p>macOS es un sistema operativo desarrollado por <strong>Apple</strong> para sus computadoras Mac. 
+                                Lanzado por primera vez en <strong>2001</strong> como <strong>Mac OS X</strong>, ha evolucionado a lo largo de los años con nuevas versiones y mejoras.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Características</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Interfaz gráfica de usuario (GUI) con diseño minimalista y elegante.</li>
+                                <li class="list-group-item">Integración con otros dispositivos Apple como iPhone y iPad.</li>
+                                <li class="list-group-item">Aplicaciones nativas como <strong>Safari, Mail, iMessage y FaceTime</strong>.</li>
+                                <li class="list-group-item">Seguridad integrada con <strong>Gatekeeper</strong> y actualizaciones regulares.</li>
+                                <li class="list-group-item">Compatibilidad con software de terceros y máquinas
+                                    virtuales como <strong>Parallels Desktop</strong> y <strong>VMware Fusion</strong>.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Desarrollo</h2>
+                            <p>macOS ha pasado por varias versiones importantes como <strong>Mac OS X Tiger, Leopard, Snow Leopard</strong> y
+                                las más recientes <strong>macOS Catalina y Big Sur</strong>. Apple ha introducido mejoras en rendimiento,
+                                seguridad y diseño en cada actualización.</p>
+                                
+                            <div class="container-sm">
+                                <div class="container-imagenes">
+                                    <figure class="figure">
+                                        <img src="https://www.cnet.com/a/img/resize/793565179067cf37e7b9be723f5b0a439575c407/hub/2019/10/07/fc04b95e-1b6f-4ed7-8c1a-be77243b4291/macos-catalina.png?auto=webp&fit=crop&height=675&width=1200" class="figure-img img-fluid rounded" alt="Imagen macOS Catalina">
+                                        <figcaption class="figure-caption">macOS Catalina</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://actualidadaccesible.com/wp-content/uploads/2020/06/25FC1D3E-3CE4-4795-894F-29FF70466618.f0454525597c4ff79f19f1c8e2e8ec35.jpeg" class="figure-img img-fluid rounded" alt="Imagen macOS Big Sur">
+                                        <figcaption class="figure-caption">macOS Big Sur</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://cdn.neowin.com/news/images/uploaded/2021/06/1623093324_2021-06-08_story.jpg" class="figure-img img-fluid rounded" alt="Imagen macOS Monterey">
+                                        <figcaption class="figure-caption">macOS Monterey</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                    </main>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Android -->
+    <div class="modal fade" id="modalAndroid" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Android</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <main class="container mt-4">
+                        <section class="mb-5">
+                            <h2 class="text-primary">Descripción</h2>
+                            <p>Android es un sistema operativo móvil desarrollado por <strong>Google</strong> basado en <strong>Linux</strong>. 
+                                Lanzado por primera vez en <strong>2008</strong>, es el sistema operativo más utilizado en smartphones y tablets.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Características</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Interfaz táctil con gestos y notificaciones.</li>
+                                <li class="list-group-item">Personalización con widgets, fondos de pantalla y temas.</li>
+                                <li class="list-group-item">Integración con servicios de Google como <strong>Maps, Gmail y YouTube</strong>.</li>
+                                <li class="list-group-item">Seguridad integrada con <strong>Google Play Protect</strong> y actualizaciones regulares.</li>
+                                <li class="list-group-item">Compatibilidad con aplicaciones de terceros y dispositivos <strong>Android Auto y Wear OS</strong>.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Desarrollo</h2>
+                            <p>Android ha pasado por varias versiones importantes como <strong>Cupcake, KitKat, Lollipop</strong> y las más recientes
+                                <strong>Oreo, Pie y Android 10</strong>. Google ha introducido mejoras en rendimiento, seguridad y privacidad en cada actualización.</p>
+                                
+                            <div class="container-sm">
+                                <div class="container-imagenes">
+                                    <figure class="figure">
+                                        <img src="https://e0.pxfuel.com/wallpapers/686/366/desktop-wallpaper-android-12-droid-google-moto.jpg" alt="Imagen Android 12">
+                                        <figcaption class="figure-caption">Android 12</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://w0.peakpx.com/wallpaper/463/34/HD-wallpaper-android-11-sky-electric-blue-thumbnail.jpg" class="figure-img img-fluid rounded" alt="Imagen Android 11">
+                                        <figcaption class="figure-caption">Android 11</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://i.pinimg.com/736x/32/a4/36/32a43668c29ef63ecfb5e728a49181ff.jpg" class="figure-img img-fluid rounded" alt="Imagen Android 10">
+                                        <figcaption class="figure-caption">Android 10</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                    </main>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal iOS -->
+    <div class="modal fade" id="modaliOS" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">iOS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <main class="container mt-4">
+                        <section class="mb-5">
+                            <h2 class="text-primary">Descripción</h2>
+                            <p>iOS es un sistema operativo móvil desarrollado por <strong>Apple</strong> para sus dispositivos iPhone y iPad. 
+                                Lanzado por primera vez en <strong>2007</strong> como <strong>iPhone OS</strong>, ha evolucionado a lo largo de los años con nuevas versiones y mejoras.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Características</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Interfaz táctil con gestos y notificaciones.</li>
+                                <li class="list-group-item">Personalización con widgets, fondos de pantalla y temas.</li>
+                                <li class="list-group-item">Integración con servicios de Apple como <strong>iCloud, Apple Music y Apple Pay</strong>.</li>
+                                <li class="list-group-item">Seguridad integrada con <strong>Face ID</strong> y actualizaciones regulares.</li>
+                                <li class="list-group-item">Compatibilidad con aplicaciones de la <strong>App Store</strong> y dispositivos <strong>Apple Watch y AirPods</strong>.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Desarrollo</h2>
+                            <p>iOS ha pasado por varias versiones importantes como <strong>iOS 7, iOS 11, iOS 13</strong> y las más recientes
+                                <strong>iOS 16, iOS 17 y iOS 18</strong>. Apple ha introducido mejoras en rendimiento, seguridad y privacidad en cada actualización.</p>
+                                
+                            <div class="container-sm">
+                                <div class="container-imagenes">
+                                    <figure class="figure">
+                                        <img src="https://s.isanook.com/hi/0/ud/311/1558849/16.jpg?ip/crop/w670h402/q80/jpg" class="figure-img img-fluid rounded" alt="Imagen iOS 16">
+                                        <figcaption class="figure-caption">iOS 16</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://www.macworld.com/wp-content/uploads/2024/12/ios-17-logo-colors-3.jpg?quality=50&strip=all" class="figure-img img-fluid rounded" alt="Imagen iOS 17">
+                                        <figcaption class="figure-caption">iOS 17</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://m-cdn.phonearena.com/images/article/156870-wide-two_1200/These-iPhones-and-iPads-are-tipped-to-receive-iOS-18-and-iPadOS-18-later-this-year.jpg" class="figure-img img-fluid rounded" alt="Imagen iOS 18">
+                                        <figcaption class="figure-caption">iOS 18</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                    </main>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chrome OS -->
+    <div class="modal fade" id="modalChromeOS" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Chrome OS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <main class="container mt-4">
+                        <section class="mb-5">
+                            <h2 class="text-primary">Descripción</h2>
+                            <p>Chrome OS es un sistema operativo desarrollado por <strong>Google</strong> basado en el navegador web <strong>Google Chrome</strong>. 
+                                Lanzado por primera vez en <strong>2011</strong>, está diseñado para dispositivos <strong>Chromebook</strong> y se centra en la nube y la productividad.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Características</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Interfaz minimalista con aplicaciones web y extensiones de Chrome.</li>
+                                <li class="list-group-item">Integración con servicios de Google como <strong>Drive, Docs y Gmail</strong>.</li>
+                                <li class="list-group-item">Seguridad integrada con <strong>Verified Boot</strong> y actualizaciones automáticas.</li>
+                                <li class="list-group-item">Compatibilidad con aplicaciones de Android y Linux a través de <strong>Google Play Store</strong>.</li>
+                                <li class="list-group-item">Rendimiento rápido y arranque instantáneo en dispositivos Chromebook.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="text-primary">Desarrollo</h2>
+                            <p>Chrome OS ha evolucionado con el tiempo para incluir soporte para aplicaciones de Android y Linux, así como
+                                integración con servicios de Google. Los Chromebooks son populares en la educación y el trabajo remoto por su
+                                facilidad de uso y bajo costo.</p>
+                                
+                            <div class="container-sm">
+                                <div class="container-imagenes">
+                                    <figure class="figure">
+                                        <img src="https://cdn.neowin.com/news/images/uploaded/2020/06/1593182306_chrome_os_medium.jpg" class="figure-img img-fluid rounded" alt="Imagen Chrome OS">
+                                        <figcaption class="figure-caption">Chrome OS</figcaption>
+                                    </figure>
+            
+                                    <figure class="figure">
+                                        <img src="https://i.pcmag.com/imagery/roundups/05DmN59FkxyQcsKln78X6Cg-1..v1709144271.jpg" class="figure-img img-fluid rounded" alt="Imagen Chromebook">
+                                        <figcaption class="figure-caption">Chromebook</figcaption>
+                                    </figure>
+
+                                </div>
+                            </div>
+                        </section>
+
+                    </main>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-sistemas">
         <ul>
             <li><a href="#">Lorem</a></li>
             <li><a href="#">Lorem</a></li>
@@ -219,7 +622,7 @@
             <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
         </ul>
         <hr>
-        <p>© 2024 Guía de Sistemas Operativos. Todos los derechos reservados.</p>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://rjarosor01.github.io/SistemasOperativosWeb/">Proyecto Web - Guía de Sistemas Operativos</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://rjarosor01.github.io/SistemasOperativosWeb/">Raúl Jaroso Ruiz</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
     </footer>
 </body>
 </html>

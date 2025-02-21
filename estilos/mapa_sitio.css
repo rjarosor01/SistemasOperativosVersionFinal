@@ -36,10 +36,9 @@ header nav {
 }
 
 header nav a {
-    padding: 0px 20px;
     color: white;
     text-decoration: none;
-    margin: 0 25px;
+    margin: 0 45px;
     font-size: 16px;
     transition: 0.3s;
 }
@@ -50,6 +49,11 @@ header nav a:hover {
 
 header nav a:active {
     color: #6a6a6a;
+}
+
+header nav img {
+    vertical-align: middle;
+    width: 40px;
 }
 
 #logo {
@@ -214,6 +218,15 @@ footer p {
     font-size: 14px;
     text-align: center;
     padding: 10px 0;
+}
+
+footer p a {
+    color: #d1d1d1;
+    transition: 0.3s;
+}
+
+footer p a:hover {
+    color: #007bff;
 }
 
 footer hr {

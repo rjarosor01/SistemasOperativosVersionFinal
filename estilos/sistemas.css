@@ -360,13 +360,13 @@ figcaption {
     margin: 20px;
 }
 
-.video iframe {
+.video video {
     border: none;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-.video iframe:hover {
+.video video:hover {
     cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);

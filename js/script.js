@@ -36,3 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let modals = document.querySelectorAll(".modal");
+
+    modals.forEach((modal) => {
+        modal.addEventListener("hidden.bs.modal", function () {
+            let videos = modal.querySelectorAll("video");
+            videos.forEach((video) => {
+                video.pause();  // Pausa el video cuando el modal se cierra
+                video.currentTime = 0; // Opcional: reinicia el video
+            });
+        });
+    });
+});
